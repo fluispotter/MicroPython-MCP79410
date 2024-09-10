@@ -1,1 +1,9 @@
-from .mcp79410 import MCP79410
+from .mcp79410 import (
+    MCP79410,
+    DateTime,
+    ALARM_MASK_SECONDS,
+    ALARM_MASK_MINUTES,
+    ALARM_MASK_HOURS,
+    ALARM_MASK_DAY_OF_WEEK,
+    ALARM_MASK_DATE,
+    ALARM_MASK_ALL)
