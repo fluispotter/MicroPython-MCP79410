@@ -116,7 +116,7 @@ class MCP79410:
         return DateTime(
             read_bcd(self._BUFFER_56[_RTCSEC] & 0b01111111),
             read_bcd(self._BUFFER_56[_RTCMIN] & 0b01111111),
-            read_bcd(self._BUFFER_56[_RTCHOUR] & 0b00011111),
+            read_bcd(self._BUFFER_56[_RTCHOUR] & 0b00111111),
             read_bcd(self._BUFFER_56[_RTCWDAY] & 0b00000111),
             read_bcd(self._BUFFER_56[_RTCDATE] & 0b00111111),
             read_bcd(self._BUFFER_56[_RTCMTH] & 0b00011111),
